@@ -1,0 +1,5 @@
+star rating
+tic tac toe
+infinite scroll
+todo app
+accordion
