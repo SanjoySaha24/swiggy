@@ -18,3 +18,8 @@ list-style-type: none;
 padding: 10px;
 margin: 10px;
 }
+
+.login{
+    padding: 0 20px;
+    cursor: pointer;
+}

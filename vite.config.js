@@ -10,4 +10,14 @@ export default defineConfig({
       },
     }),
   ],
+   server: {
+    proxy: {
+      "/api": {
+        target: "https://www.swiggy.com",   // Swiggy API
+        changeOrigin: true,                // acts like a backend
+        secure: true,
+        rewrite: (path) => path.replace(/^\/api/, "") // remove /api prefix
+      }
+    }
+  }
 })

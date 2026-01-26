@@ -2,6 +2,13 @@
     padding: 10px;
 }
 .filter-btn{
-    margin: 10px;
+    /* margin: 10px; */
     cursor: pointer;
+    display: flex;
+}
+.filter{
+    gap: 10px;
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
