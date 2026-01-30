@@ -10,6 +10,8 @@ import Error from './components/Error.jsx'
 // import Grocery from './components/Grocery.jsx'
 import './style.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import { Provider } from 'react-redux'
+
 
 const Grocery = lazy(() => import("./components/Grocery.jsx"))
 

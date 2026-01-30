@@ -95,8 +95,60 @@ createContext() - comes from react library, hook - useContext, here used for sho
 UserContext.Provider
 
 <!-- ep12 -->
-Redux
+# Redux
 00:29:00
 click add to cart -> dispatches action -> calls reducer function -> modifies slice of redux store
 add to cart component is subscribed to cart using selector
 till 00:39:45 is theory, refer to screenshot
+
+- install @reduxjs/toolkit and react-redux
+- build our store
+- connect our store to our app
+- slice (cartSlice)
+- dispatch (action)
+- Selector
+
+npm i @reduxjs/toolkit
+npm i react-redux
+
+configureStore is library of reduxjs/toolkit
+Provider is library of react-redux
+createSlice is library of reduxjs/toolkit
+refer to cartSlice.js
+
+// subscribing to store using selector
+const cartItems = useSelector((store) => store.cart.items)  in Header.js
+
+build Cart.js to show added items
+useDispatch()
+clearCart
+
+read immerjs doc
+
+redux devtools chrome extension - helps in debugging
+
+go to redux toolkit official doc and read about RTK query quick start
+
+<!-- ep13 -->
+Time for test
+1. Developer Manual testing
+
+Types of testing:
+1. Unit testing - testing one component in isolation
+2. Integration testing
+3. End to End testing - e2e testing
+
+# setting up testing in our app
+install React testing library -
+npm install --save-dev @testing-library/react @testing-library/dom
+
+install Jest -
+npm install --save-dev jest
+
+install Jest using babel -
+npm install --save-dev babel-jest @babel/core @babel/preset-env
+
+then config babel
+refer to parceljs.org -> js -> read about Babel
+
+00:35:00

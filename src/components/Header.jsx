@@ -2,11 +2,15 @@ import './HeaderStyle.css'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import useOnlineStatus from '../utils/useOnlineStatus'
+// import { useSelector } from 'react-redux'
 
 const Header = () => {
   const [btnNameReact, setBtnNameReact] = useState("Login")
 
   const onlineStatus = useOnlineStatus()
+
+// // subscribing to store using selector
+// const cartItems = useSelector((store) => store.cart.items)
 
   return (
     <div className="header">
