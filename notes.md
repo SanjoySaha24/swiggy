@@ -139,6 +139,9 @@ Types of testing:
 3. End to End testing - e2e testing
 
 # setting up testing in our app
+
+<!-- video old so old setup -->
+
 install React testing library -
 npm install --save-dev @testing-library/react @testing-library/dom
 
@@ -151,4 +154,36 @@ npm install --save-dev babel-jest @babel/core @babel/preset-env
 then config babel
 refer to parceljs.org -> js -> read about Babel
 
-00:35:00
+Jest configuration
+npx jest --init
+
+Jsdom(browser-like)
+
+we have to create our own jest.config.js
+
+install jsdom library
+
+00:52:00
+test cases
+
+npm run test
+
+__ = dunder tests
+create __tests__ = contains testing filles
+
+01:00:00 test code for JS testing
+
+01:11:00 test code for React JS testing
+
+import {render} from "@testing-library/react"
+
+install @babel/preset-react - to make JSx work in test case
+
+install @babel/preset-react - inside my babel config
+
+install @testing-library/jest-dom
+
+npm i -D @testing-library/jest-dom
+
+01:40:00 -  skipped
+
